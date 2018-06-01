@@ -1,12 +1,10 @@
 Algoritmo randomnum
-	Repetir
-		Escribir "Ingrese un numero del 0 al 15: "
+	Escribir "Ingrese un numero: "
+	Leer num
+	Mientras (num < 0) o (num > 15) Hacer
+		Escribir "Fallaste ingresa otro numero!"
+		Escribir "Ingrese un numero: "
 		Leer num
-		pc <- azar(16)
-		Si num == pc Entonces
-			Escribir "Acertaste!!"
-		SiNo
-			Escribir "Fallaste!!"
-		Fin Si
-	Hasta Que num == pc
+	Fin Mientras
+	Escribir "Lo lograste!"
 FinAlgoritmo
