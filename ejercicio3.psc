@@ -1,8 +1,9 @@
 Algoritmo ejercicio3
+	Definir num Como Entero
 	Escribir "Ingrese un numero: "
 	Leer num
 	primo <- Verdadero
-	Para ciclo<-2 Hasta num-1 Con Paso 1 Hacer
+	Para ciclo<-2 Hasta num/2+1 Con Paso 1 Hacer
 		Si (num % ciclo) == 0 Entonces
 			primo <- Falso
 		FinSi
